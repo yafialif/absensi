@@ -1,0 +1,7 @@
+version: '1.0'
+web:
+  type: php
+  version: 7.3
+  doc_root: ./public
+  package_manager: composer
+  run: php artisan migrate --force & php artisan queue:work & apache2-foreground
