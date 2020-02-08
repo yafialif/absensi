@@ -1,0 +1,215 @@
+html.modal-active, body.modal-active {
+    overflow: hidden;
+}
+
+
+
+#video-background {
+    /*position: fixed;*/
+    top: -20px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /*height: 100%;*/
+    /*z-index: -100;*/
+}
+
+.modal-dialog{
+
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+
+    min-width: 100%;
+    width: 100%;
+    height: 60%;
+
+}
+.modal-content{
+
+    height: 100vh;
+    padding: 0px 0px 0px 0px;
+    /*background-color: ;*/
+}
+
+
+
+#modal-container {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 12123;
+}
+#modal-container.one {
+    transform: scaleY(0.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one .modal-background .modal {
+    transform: scale(0);
+    animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out {
+    transform: scale(1);
+    animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.one.out .modal-background .modal {
+    animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle;
+}
+#modal-container .modal-background .modal {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    display: inline-block;
+    font-weight: 300;
+    position: relative;
+}
+
+.content {
+    /*display: none;*/
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 12;
+}
+
+@keyframes unfoldIn {
+    0% {
+        transform: scaleY(0.005) scaleX(0);
+    }
+    50% {
+        transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+@keyframes unfoldOut {
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+        transform: scaleY(0.005) scaleX(0);
+    }
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Timer CSS*/
+
+
+.timer-1 {
+    display: flex;
+    margin-bottom: 40px;
+}
+.timer-1 > * {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.175), 0 1px rgba(0, 0, 0, 0.025);
+    border-radius: 4px;
+    z-index: 1;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.timer-1 > *:not(:last-child) {
+    margin-right: 10px;
+}
+.timer-1 > *.flip {
+    -webkit-animation: flip 999ms ease infinite;
+    animation: flip 999ms ease infinite;
+}
+.timer-1 > *:after {
+    font-size: 10px;
+    font-weight: 600;
+    opacity: .2;
+}
+.timer-1.noscale *.flip {
+    -webkit-animation: none;
+    animation: none;
+}
+
+@-webkit-keyframes flip {
+    from {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes flip {
+    from {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* Carousel  */
+.carousel-caption{
+    vertical-align: middle;
+    left: 5%;
+    right: 5%;
+}
+.arab{
+    top: 10%;
+}
+.terjemah{
+    bottom: 10%;
+}
+h2{
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serifss;
+}
+.arab-1{
+    font-size: 1rem;
+}
+.arab-2{
+    font-size: 50px;
+}
+.arab-3{
+    font-size: 3rem;
+}
+.dzikir{
+    font-size: 34px;
+    line-height: 1.2;
+}
+p{
+
+}

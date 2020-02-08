@@ -1,0 +1,150 @@
+/** Fonts **/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans");
+/** Variables **/
+/** Mixins **/
+
+body .announcements-container {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: inline-block;
+    font-family: "PT Sans", sans-serif;
+    height: 40px;
+    line-height: 40px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+body .announcements-container:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+body .announcements-container .container-title {
+    /*width: 13%;*/
+    height: 100%;
+    overflow: hidden;
+    padding: 0 15px 0 15px;
+    float: left;
+    background: #03a9f4;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+body .announcements-container .container-title img {
+    width: 40px;
+    /*height: 16px;*/
+    /*vertical-align: middle;*/
+    /*margin: -5px 3px 0 0;*/
+}
+body .announcements-container ul.announcements {
+    /*width: 67%;*/
+    /*float: left;*/
+    height: 40px;
+    overflow: hidden;
+    list-style-type: none;
+    vertical-align: middle;
+}
+body .announcements-container ul.announcements li {
+    width: 100%;
+    overflow: hidden;
+    font-size: 24px;
+    /*margin: -12px 0 0 0;*/
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0;
+    line-height: 40px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+.border{
+    border-radius: 10px;
+}
+.w3-dropdown-click, .w3-button, .w3-display-middle, .w3-display-bottommiddle{
+    display: none;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400);
+
+.font-roboto {
+    font-family: 'roboto condensed';
+}
+body{
+    background-color: black;
+
+}
+/*Jadwal Shalat*/
+.jamactive{
+    background-color: #A3CB38;
+
+}
+.bg_shadow{
+    text-shadow: 5px 5px 18px #1e90ff;
+}
+.textactive{
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+
+/*Live Jam */
+@-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+.clock {margin:0 auto; border:1px solid #333; color:#fff; }
+
+#Date { font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; font-size:30px; text-align:center; }
+
+.jam-top {  margin:0 auto; padding:0px; list-style:none; text-align:center; }
+.jam { display:inline; font-size:4em; text-align:center; font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; }
+
+#point { position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite;  }
+
+/*Carausel*/
+@-webkit-keyframes mymove
+{
+    0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+    50% {opacity:0; text-shadow:none; }
+    100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }
+}
+
+@-moz-keyframes mymove
+{
+    0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+    50% {opacity:0; text-shadow:none; }
+    100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }
+}
+
+.carousel-item {
+    height: 63vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}

@@ -1,0 +1,35 @@
+/**/
+
+a {
+  color: #ff5f2e;
+}
+a:hover {
+  color: #fcbe32;
+}
+
+button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  content: " ";
+  overflow: hidden;
+  background-size: cover;
+
+  color: #e1eef6;
+}
