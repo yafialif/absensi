@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/getdata','ChartController@indexchart');
 //Route::post('/coba','RfidController@index');
+Route::post('/request','Admin\ApiController@request');
