@@ -13,8 +13,11 @@ class ApiController extends Controller
     public function request(Request $request){
 
         $data = [
+            'status'=>200,
+            'response'=>true,
             'id_device'=>$request->id_device,
-            'id_hex'=>$request->id_hex
+            'id_hex'=>$request->id_hex,
+            'msg'=>'Data is Accepted'
 
         ];
 
